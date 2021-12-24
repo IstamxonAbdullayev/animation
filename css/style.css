@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+span {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+span:nth-child(1) {
+  background-color: red;
+  transform: translate(0,0);
+  animation-name: span-red;
+  z-index: 10;
+}
+
+span:nth-child(2) {
+  background-color: green;
+  transform: translate(200px,0);
+  animation-name: span-green;
+
+}
+
+span:nth-child(3) {
+  background-color: blue;
+  transform: translate(200px,200px);
+  animation-name: span-blue;
+  z-index: 10;
+}
+
+span:nth-child(4) {
+  background-color: yellow;
+  transform: translate(0,200px);
+  animation-name: span-yellow;
+}
+
+@keyframes span-red {
+  0% {
+    transform: translate(0, 0);
+    background-color: red;
+    border-radius: 30px;
+  }
+
+  25% {
+    transform: translate(200px, 0);
+    background-color: green;
+    border-radius: 30px;
+  }
+
+  50% {
+    transform: translate(200px, 200px);
+    background-color: blue;
+    border-radius: 30px;
+  }
+
+  75% {
+    transform: translate(0, 200px);
+    background-color: yellow;
+    border-radius: 30px;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    background-color: red;
+    border-radius: 30px;
+  }
+}
+
+@keyframes span-green {
+  0% {
+    transform: translate(200px, 0);
+    background-color: green;
+    border-radius: 30px;
+  }
+
+  25% {
+    transform: translate(200px, 200px);
+    background-color: blue;
+    border-radius: 30px;
+  }
+
+  50% {
+    transform: translate(0px, 200px);
+    background-color: yellow;
+    border-radius: 30px;
+  }
+
+  75% {
+    transform: translate(0, 0);
+    background-color: red;
+    border-radius: 30px;
+  }
+
+  100% {
+    transform: translate(200px, 0);
+    background-color: green;
+    border-radius: 30px;
+  }
+}
+
+@keyframes span-blue {
+  0% {
+    transform: translate(200px, 200px);
+    background-color: blue;
+    border-radius: 30px;
+  }
+
+  25% {
+    transform: translate(0px, 200px);
+    background-color: yellow;
+    border-radius: 30px;
+  }
+
+  50% {
+    transform: translate(0, 0);
+    background-color: red;
+    border-radius: 30px;
+  }
+
+  75% {
+    transform: translate(200px, 0);
+    background-color: green;
+    border-radius: 30px;
+  }
+
+  100% {
+    transform: translate(200px, 200px);
+    background-color: blue;
+    border-radius: 30px;
+  }
+}
+
+@keyframes span-yellow {
+  0% {
+    transform: translate(0px, 200px);
+    background-color: yellow;
+    border-radius: 30px;
+  }
+
+  25% {
+    transform: translate(0, 0);
+    background-color: red;
+    border-radius: 30px;
+  }
+
+  50% {
+    transform: translate(200px, 0);
+    background-color: green;
+    border-radius: 30px;
+  }
+
+  75% {
+    transform: translate(200px, 200px);
+    background-color: blue;
+    border-radius: 30px;
+  }
+
+  100% {
+    transform: translate(0, 200px);
+    background-color: yellow;
+    border-radius: 30px;
+  }
+}
+
+
